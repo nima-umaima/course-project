@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from "@angular/forms";
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -10,7 +10,7 @@ import { RecipeDetailComponent } from './recipe/recipe-detail/recipe-detail.comp
 import { RecipeItemComponent } from './recipe/recipe-list/recipe-item/recipe-item.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
-import { NewComponentComponent } from './new-component/new-component.component';
+// import { NewComponentComponent } from './new-component/new-component.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +22,13 @@ import { NewComponentComponent } from './new-component/new-component.component';
     RecipeItemComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
-    FormsModule,
-    NewComponentComponent 
+    //
+    // NewComponentComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
